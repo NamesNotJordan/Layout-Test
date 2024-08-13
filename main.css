@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 3em;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+}
+.top-nav:hover {
+    background-color: black;
+    color: white;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0rem
+}
+#Section-1{
+    background-color: darkgray;
+}
