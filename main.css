@@ -72,7 +72,7 @@ section{
     align-items: center;
     justify-content: center;
     padding: 3rem 0rem;
-    height: 80vh;
+    height: 70vh;
 }
 h1 {
     margin: 0;
@@ -93,4 +93,39 @@ p {
     background-color: darkgray;
     height: 90vh;
     padding: 3rem 20rem;
+}
+#Section-2{
+    display: grid;
+    grid-template-columns: 50vw 1fr;
+    padding: 5rem 5rem 5rem 0;
+}
+.pic-block {
+    background-color: gray;
+    height: 100%;
+}
+#Section-2 .pic-block{
+    grid-column: 1;
+}
+.text-stack{
+    padding: 5rem 7rem;
+}
+.grey-button{
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    width: 180px;
+    height: 50px;
+    margin: 2rem 0.5rem;
+}
+#Section-3{
+    display: grid;
+    grid-template-columns: 1fr 50vw;
+    padding: 5rem 0 5rem 5rem;
+    background-color: antiquewhite;
+}
+#Section-3 .pic-block{
+    grid-column: 2;
 }
