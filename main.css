@@ -9,9 +9,9 @@ body{
 .top-nav{
     display: grid;
     grid-template-columns: auto 2fr 1fr 5rem;
-    grid-template-rows: 10vh auto;
+    grid-template-rows: 100px auto;
     position: fixed;
-    height: 10vh;
+    height: 100px;
     width: 96vw;
     background-color: white;
     padding: 1rem 3rem;
@@ -74,6 +74,8 @@ section{
     justify-content: center;
     padding: 3rem 0rem;
     height: 70vh;
+    min-height: 600px;
+    min-width: fit-content;
 }
 h1 {
     margin: 0;
@@ -150,6 +152,7 @@ p {
     grid-template-columns: 10px 220px 10px 500px 40px 300px 10px;
     gap: 60px;
     height:85vh;
+    min-height: 850px;
     background-color: lightgrey;
 }
 .select-container{
@@ -237,6 +240,7 @@ dialog[open]{
     grid-template-columns: repeat(13,115px);
     grid-template-rows: repeat(7, 115px);
     height: 80vh;
+    min-height: 800px;
 }
 .block-1{
     background-color: lightgrey;
