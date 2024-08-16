@@ -1,3 +1,10 @@
+const modal = document.querySelector(".modal");
+const modalText = document.querySelector(".modal-text")
+const menuButton = document.querySelector("#menu-icon");
+const selectElem = document.querySelector("#select-box");
+const closeModalBtn = document.querySelector(".close-button");
+const selectOptions = document.getElementsByClassName("option");
+
 function toggleMenu() {
     console.log("Function called")
     let links = document.querySelector("#nav-links");
@@ -14,7 +21,16 @@ function toggleMenu() {
         menuIcon.classList.replace("fa-bars", "fa-xmark");
     }
 }
+function openDialog(){
+    let itemText = selectElem.options[selectElem.selectedIndex].text;
+    modalText.textContent = itemText;
+    modal.showModal();
+}
 
-menuButton = document.querySelector("#menu-icon");
+for (let i = 0; i < selectOptions.length; i++) {
+    selectOptions[i].addEventListener("click",openDialog);
+    
+}
+
+closeModalBtn.addEventListener("click", ()=>{modal.close()})
 menuButton.addEventListener("click", toggleMenu);
-console.log(menuButton)

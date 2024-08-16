@@ -170,6 +170,25 @@ option{
     height: 70px;
     font-size: 2rem;
 }
+dialog[open]{
+    height: 600px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px auto;
+}
+.close-button{
+    height: 50px;
+    aspect-ratio: 1/1;
+    grid-area: 1 / 3;
+    background: none;
+    border: none;
+}
+.modal-text{
+    grid-area: 2 / 2;
+    font-size: 3rem;
+    place-self: center;
+}
 .card-1{
     grid-area: 1 / 2 / span 2/ span 2;
     height: 100%;
