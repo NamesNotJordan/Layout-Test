@@ -12,9 +12,10 @@ body{
     grid-template-rows: 10vh auto;
     position: fixed;
     height: 10vh;
-    width: 94vw;
+    width: 96vw;
     background-color: white;
     padding: 1rem 3rem;
+    z-index: 1;
 }
 .top-nav #nav-links {
     display: none;
@@ -84,6 +85,10 @@ h2 {
     font-size: 5rem;
     font-weight: 700;
 }
+h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
 p {
     margin: 0;
     font-size: 1.5rem;
@@ -134,13 +139,16 @@ p {
     display: flex;
     flex-direction: column;
     background-color: gray;
+    color: white;
+    padding: 1rem;
 }
 #Section-4{
     display: grid;
-    grid-template-rows: 250px 100px 250px;
-    grid-template-columns: 10px 190px 10px 500px 40px 200px 10px;
-    padding: 50px 200px;
-    gap: 40px;
+    grid-template-rows: 300px 100px 300px;
+    grid-template-columns: 10px 220px 10px 500px 40px 300px 10px;
+    gap: 60px;
+    height:85vh;
+    background-color: lightgrey;
 }
 .select-container{
     grid-area: 1 / 4 / span 1 / span 2 ;
@@ -148,6 +156,17 @@ p {
 }
 #select-box{
     width: 100%;
+    height: 70px;
+    position: relative;
+    top: -30px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+option{
+    height: 70px;
+    font-size: 2rem;
 }
 .card-1{
     grid-area: 1 / 2 / span 2/ span 2;
