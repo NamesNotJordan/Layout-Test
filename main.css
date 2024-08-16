@@ -212,3 +212,45 @@ option{
     background-color: whitesmoke;
     color: gray;
 }
+#Section-6{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(13,115px);
+    grid-template-rows: repeat(7, 115px);
+    height: 80vh;
+}
+.block-1{
+    background-color: lightgrey;
+    grid-area: 2 / 2 / 7 / 13;
+    width: 100%;
+    height: 120%;
+}
+.stack-block:not(:first-of-type){
+    height: 100%;
+    width: 100%;
+}
+.stack-block:nth-of-type(even){
+    background-color: grey;
+}
+.stack-block:nth-of-type(odd):not(:first-of-type){
+    background-color: white;
+}
+
+.block-2{
+    grid-area: 1 / 1 /span 2 / span 3;
+}
+.block-3{
+    grid-area: 2 / 3 /span 2 / span 3;
+}
+.block-4{
+    grid-area: 3 / 5 /span 2 / span 3;
+}
+.block-5{
+    grid-area: 4 / 7 /span 2 / span 3;
+}
+.block-6{
+    grid-area: 5 / 9 /span 2 / span 3;
+}
+.block-7{
+    grid-area: 6 / 11 /span 2 / span 3;
+}
