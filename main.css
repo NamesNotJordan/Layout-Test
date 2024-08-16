@@ -90,7 +90,7 @@ p {
 }
 
 #Section-1{
-    background-color: darkgray;
+    background-color: lightgray;
     height: 90vh;
     padding: 3rem 20rem;
 }
@@ -109,23 +109,72 @@ p {
 .text-stack{
     padding: 5rem 7rem;
 }
-.grey-button{
+.link-button{
     border: none;
     border-radius: 10px;
-    background-color: gray;
     font-size: 2rem;
     font-weight: 700;
-    color: white;
     width: 180px;
     height: 50px;
     margin: 2rem 0.5rem;
+}
+.dark-button{
+    background-color: gray;
+    color: white;
 }
 #Section-3{
     display: grid;
     grid-template-columns: 1fr 50vw;
     padding: 5rem 0 5rem 5rem;
-    background-color: antiquewhite;
 }
 #Section-3 .pic-block{
     grid-column: 2;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+#Section-4{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 10px 190px 10px auto 40px 200px 10px;
+    padding: 50px 200px;
+    gap: 40px;
+}
+#select-box{
+    grid-area: 1 / 4 ;
+}
+#Section-4 .card{
+    height: 100%;
+}
+.card-1{
+    grid-area: 1 / 2 / span 2/ span 2;
+}
+.card-2{
+    grid-area: 1 / 6 / span 2/ span 1;
+}
+.card-3{
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+.card-4{
+    grid-area: 2 / 4 / span 2 / span 1;
+}
+.card-5{
+    grid-area: 3 / 5 / span 1 / span 3;
+}
+#Section-5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: antiquewhite;
+}
+#Section-5 .card{
+    width: 450px;
+}
+.light-button{
+    background-color: white;
+    color: gray;
 }
