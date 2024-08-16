@@ -137,31 +137,39 @@ p {
 }
 #Section-4{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 10px 190px 10px auto 40px 200px 10px;
+    grid-template-rows: 250px 100px 250px;
+    grid-template-columns: 10px 190px 10px 500px 40px 200px 10px;
     padding: 50px 200px;
     gap: 40px;
 }
-#select-box{
-    grid-area: 1 / 4 ;
-}
-#Section-4 .card{
+.select-container{
+    grid-area: 1 / 4 / span 1 / span 2 ;
     height: 100%;
+}
+#select-box{
+    width: 100%;
 }
 .card-1{
     grid-area: 1 / 2 / span 2/ span 2;
+    height: 100%;
 }
 .card-2{
     grid-area: 1 / 6 / span 2/ span 1;
+    height: 100%;
 }
 .card-3{
     grid-area: 3 / 1 / span 1 / span 2;
+    height: 100%;
 }
 .card-4{
     grid-area: 2 / 4 / span 2 / span 1;
+    width: 300px;
+    height: 100%;
+    margin: 0 0 0 150px;
 }
 .card-5{
     grid-area: 3 / 5 / span 1 / span 3;
+    height: 100%;
 }
 #Section-5{
     display: flex;
